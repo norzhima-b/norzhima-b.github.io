@@ -333,6 +333,9 @@ main {
 .back img {
     width: 34px;
 }
+.globe-second {
+    display: none;
+}
 @media screen and (max-width: 1600px) {  /*Ноутбуки*/
     .about p {
         font-size: 20px;
@@ -456,7 +459,7 @@ main {
         width: 535px;
     }
     .container {
-        width: 93%;
+        width: 90%;
     }
     .about__right {
         padding-left: 37px;
@@ -501,7 +504,7 @@ main {
         width: 40px;
     }
     .container {
-        width: 95%;
+        width: 90%;
     }
     .about__wrap img {
         width: 320px;
@@ -751,6 +754,10 @@ main {
     }
 }
 @media screen and (max-width: 596px){
+    .globe-first {
+        display: none;
+    }
+    
     .header {
         margin-top: 14px;
     }
@@ -824,19 +831,30 @@ main {
     .logo:hover {
         opacity: 1;
     }
+    .globe-second {
+        display: flex;
+        margin-top: 0;
+    }
+    .about p {
+        font-size: 16px;
+        line-height: 32px;
+    }
 }
 @media screen and (max-width: 460px){
     .quoute__icon img{
         width: 26px;
     }
     .about__quoute{
-        font-size: 17px;
+        font-size: 13px;
     }
     .main .quoute__icon{
-        right: 310px;
+        right: 308px;
     }
     .right-side__quoute {
         padding: 10px;
+    }
+    .about__quoute {
+        padding: 28px;
     }
 }
 @media screen and (max-width: 420px){
@@ -844,10 +862,11 @@ main {
         font-size: 14px;
     }
     .logo img {
-        width: 224px;
+        max-width: 250px;
+        width: 80%;
     }
     .main__title {
-        font-size: 21px;
+        font-size: 22px;
     }
     .main p {
         font-size: 15px;
@@ -858,7 +877,11 @@ main {
         /* transform: scale(0.7); */
     }
     .main .quoute__icon{
-        right: 284px;
+        right: 274px;
+    }
+    .main__btn {
+        font-size: 17px;
+        padding: 17px 60px;
     }
     /* .logo img.logo-bg {
         display: none;
@@ -866,4 +889,9 @@ main {
     .logo img.logo-sm {
         display: block;
     } */
+}
+@media screen and (max-width: 420px){
+    .hamburger {
+        top: 20px;
+    }
 }
