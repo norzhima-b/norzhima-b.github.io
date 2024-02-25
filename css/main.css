@@ -81,15 +81,18 @@ main {
 .menu li a:hover::after {
     width: 70%;
 }
-.logo img{
-    width: 330px;
-}
+
 .logo img.logo-sm {
     width: 58px;
     display: none;
 }
 .logo {
     transform: translateY(5px);
+    transition: .25s ease all;
+}
+.logo:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 .header {
     margin-top: 28px;
@@ -177,6 +180,10 @@ main {
 }
 .hamburger {
     display: none;
+    user-select: none;
+}
+.navbar-menu, .ham-menu {
+    user-select: none;
 }
 .right-side__quoute {
     background-color: #fff;
@@ -307,6 +314,24 @@ main {
 }
 .close:hover {
     opacity: 0.6;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 20px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    display: none;
+    border-bottom: 1px solid #00000037;
+}
+.back span {
+    margin-left: 10px;
+}
+.back img {
+    width: 34px;
 }
 @media screen and (max-width: 1600px) {  /*Ноутбуки*/
     .about p {
@@ -515,7 +540,7 @@ main {
     }
     .logo {
         width: 100%;
-        background-color: #004C84;
+        /* background-color: #004C84; */
         padding: 19px 34px;
         border-radius: 16px;
     }
@@ -670,6 +695,11 @@ main {
 }
 
 @media screen and (max-width: 796px) { 
+    .back {
+        display: flex;
+        padding: 30px 0;
+        margin: 0;
+    }
     .achieve__item {
         width: 100%;
         margin: 10px 0;
@@ -721,6 +751,22 @@ main {
     }
 }
 @media screen and (max-width: 596px){
+    .header {
+        margin-top: 14px;
+    }
+    .main {
+        margin-bottom: 10px;
+    }
+    section {
+        padding: 10px 0;
+    }
+    .globe {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .globe img {
+        width: 70px;
+    }
     .welcome {
         display: none;
     }
@@ -732,7 +778,7 @@ main {
     }
     .hamburger {
         right: 20px;
-        top: 30px;
+        top: 34px;
         transform: scale(0.8);
     }
     .about__quoute {
@@ -740,13 +786,13 @@ main {
         font-size: 20px;
     }
     .right-side__quoute p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .about__wrap img {
-        height: 480px;
+        height: 340px;
     }
     .main .quoute__icon{
-        right: 380px;
+        right: 310px;
     }
     .quoute__icon img {
         height: auto;
@@ -754,23 +800,70 @@ main {
     .about__quoute br{
         display: none;
     }
+    .about p {
+        line-height: 34px;
+    }
+    .menu.active {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        height: 320px;
+    }
+    .menu li a:hover {
+        color: #fff;
+    }
+    .menu li a:hover::after {
+        content: '';
+        display: none;
+    }
+    .achieve__item:hover {
+        transform: scale(1);
+    }
+    .close {
+        top: 30px;
+    }
+    .logo:hover {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 460px){
     .quoute__icon img{
-        width: 30px;
+        width: 26px;
     }
     .about__quoute{
         font-size: 17px;
     }
+    .main .quoute__icon{
+        right: 310px;
+    }
+    .right-side__quoute {
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 420px){
     .right-side__quoute p {
-        font-size: 18px;
+        font-size: 14px;
     }
-    .logo img.logo-bg {
+    .logo img {
+        width: 224px;
+    }
+    .main__title {
+        font-size: 21px;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .hamburger {
+        right: 10px;
+        top: 24px;
+        /* transform: scale(0.7); */
+    }
+    .main .quoute__icon{
+        right: 284px;
+    }
+    /* .logo img.logo-bg {
         display: none;
     }
     .logo img.logo-sm {
         display: block;
-    }
+    } */
 }
