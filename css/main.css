@@ -757,6 +757,9 @@ main {
     }
 }
 @media screen and (max-width: 596px){
+    .quoute__icon img {
+        width: 34px;
+    }
     .globe-first {
         display: none;
     }
@@ -802,7 +805,7 @@ main {
         height: 340px;
     }
     .main .quoute__icon{
-        right: 310px;
+        right: 330px;
     }
     .quoute__icon img {
         height: auto;
@@ -842,6 +845,13 @@ main {
         font-size: 16px;
         line-height: 32px;
     }
+    .about__quoute {
+        font-size: 15px;
+        padding: 40px 60px;
+    }
+    .about__quoute br {
+        display: block;
+    }
 }
 @media screen and (max-width: 460px){
     .quoute__icon img{
@@ -851,16 +861,19 @@ main {
         font-size: 13px;
     }
     .main .quoute__icon{
-        right: 308px;
+        right: 317px;
     }
     .right-side__quoute {
         padding: 10px;
     }
     .about__quoute {
-        padding: 28px;
+        padding: 39px;
     }
 }
 @media screen and (max-width: 420px){
+    .about__quoute {
+        padding: 20px;
+    }
     .right-side__quoute p {
         font-size: 14px;
     }
@@ -880,7 +893,7 @@ main {
         /* transform: scale(0.7); */
     }
     .main .quoute__icon{
-        right: 274px;
+        right: 284px;
     }
     .main__btn {
         font-size: 17px;
