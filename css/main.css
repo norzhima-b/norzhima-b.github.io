@@ -90,6 +90,9 @@ main {
     transform: translateY(5px);
     transition: .25s ease all;
 }
+.logo img {
+    width: 330px;
+}
 .logo:hover {
     opacity: 0.6;
     cursor: pointer;
