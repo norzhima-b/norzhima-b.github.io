@@ -93,20 +93,8 @@
           console.log("click");
           $("this").toggleClass("active-btn");
           $(".menu").toggleClass("active");
+          $(".top-nav").toggleClass("active");
         });
-        $(".close").on("click", function () {
-          $(".popup").removeClass("active");
-        });
-        const achieveItems = document.querySelectorAll(".achieve__item");
-        for (let item = 0; item < achieveItems.length; item++) {
-          achieveItems[item].addEventListener("click", () => {
-            $(".popup").addClass("active");
-            $(".popup-img").attr(
-              "src",
-              achieveItems[item].querySelector("img").getAttribute("src")
-            );
-          });
-        }
       });
     </script>
   </body>
