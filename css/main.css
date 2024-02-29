@@ -378,8 +378,14 @@ main {
   text-decoration: none;
   color: #000;
   display: none;
+}
+.top-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #00000037;
 }
+
 .back span {
   margin-left: 10px;
 }
@@ -388,6 +394,30 @@ main {
 }
 .globe-second {
   display: none;
+}
+.additional a {
+  /* font-size: 18px; */
+  display: flex;
+  align-items: center;
+  /* padding: 30px 0; */
+  /* display: flex;
+  justify-content: center; */
+  text-decoration: none;
+}
+.additional a span {
+  padding-right: 4px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+.additional img {
+  width: 34px;
+  transform: scale(-1);
+}
+.top-top .container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 1600px) {
   /*Ноутбуки*/
@@ -624,20 +654,26 @@ main {
   .quoute__icon img {
     width: 43px;
   }
-  .back {
-    display: flex;
-    padding: 30px 0;
-    margin: 0;
-  }
+
   .top-nav {
     padding: 20px 26px;
   }
   .logo {
     padding: 0;
   }
+  .top-top .container {
+    /* padding: 0px 0; */
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1100px) {
+  .back {
+    display: flex;
+    padding: 30px 0;
+    margin: 0;
+  }
   .download-btn {
     margin: 20px 5px;
   }
@@ -734,6 +770,11 @@ main {
   }
   .menu.active {
     padding-top: 30px;
+  }
+  .top-top .container {
+    padding: 0px 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -976,6 +1017,9 @@ main {
   }
   .menu {
     width: 100%;
+  }
+  .top-top a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 460px) {
