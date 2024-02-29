@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Воспитательная работа</title>
+    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="/" class="logo">
+            <img class="logo-bg" src="./img/logo.png" alt="Логотип" />
+            <img class="logo-sm" src="./img/logo-sm.png" alt="Логотип" />
+          </a>
+          <div class="hamburger">
+            <!--            hamburger menu-->
+            <div class="navbar-menu d-none d-md-block" href="#">
+              <div class="ham-menu">
+                <label class="bar" for="check">
+                  <input type="checkbox" id="check" />
+                  <span class="top"></span>
+                  <span class="middle"></span>
+                  <span class="bottom"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <ul class="menu">
+            <li><a href="/">Главная</a></li>
+            <li><a href="./achieve.html">Достижения</a></li>
+            <li>
+              <a href="./method-wallet.html">Методическая копилка</a>
+            </li>
+            <li>
+              <a class="active" href="./vospit-work.html"
+                >Воспитательная работа</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <a href="/" class="back">
+      <img src="./img/arrow-right.png" alt="Стрелка назад" />
+      <span>Вернуться на главную</span>
+    </a>
+    <section class="method-wallet">
+      <div class="container">
+        <h2 class="h3">Воспитательная работа</h2>
+      </div>
+      <div class="container flex fww jcc">
+        <a
+          class="download-btn"
+          href="./files/konspect-open-hour.pdf"
+          download="konspect-open-hour"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/PDF_file_icon.svg.png"
+            alt="Иконка PDF"
+          />
+          <span class="download-btn__title"
+            >Конспект открытого классного часа <br />«Как создать вокруг себя
+            заповедник радости»</span
+          >
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+        <a
+          class="download-btn"
+          href="./files/konspect-open-hour.ppt"
+          download="open-hour.ppt"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/powepoint.png"
+            alt="Иконка Power Point"
+          />
+          <span class="download-btn__title">Классный час Презентация</span>
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+        <a
+          class="download-btn"
+          href="./files/method-develop.doc"
+          download="Методическая разработка интеллектуальной игры Своя игра"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/word.png"
+            alt="Иконка Word Office"
+          />
+          <span class="download-btn__title"
+            >Методическая разработка интеллектуальной игры «Своя игра»</span
+          >
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+        <a
+          class="download-btn"
+          href="./files/my-game.pptx"
+          download="Своя игра Презентация"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/powepoint.png"
+            alt="Иконка Power Point"
+          />
+          <span class="download-btn__title">«Своя игра» Презентация</span>
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+        <a
+          class="download-btn"
+          href="./files/konkurs-pedagog-duet.docx"
+          download="Сценарий конкурса Педагогический дуэт"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/word.png"
+            alt="Иконка Word Office"
+          />
+          <span class="download-btn__title"
+            >Сценарий конкурса «Педагогический дуэт»</span
+          >
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+        <a
+          class="download-btn"
+          href="./files/text-from-whole-soul.docx"
+          download="Сценарий педагогической гостиной. От всей души"
+        >
+          <img
+            class="download-btn__image"
+            src="./img/word.png"
+            alt="Иконка Word Office"
+          />
+          <span class="download-btn__title"
+            >Сценарий педагогической гостиной. От всей души</span
+          >
+          <span class="download-btn__look">Посмотреть</span>
+        </a>
+      </div>
+    </section>
+    <div class="popup">
+      <div class="close">
+        <img src="./img/close.png" alt="Закрыть" />
+      </div>
+      <img class="popup-img" src="./img/diploma1.jpg" alt="Диплом" />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".ham-menu input").bind("click", function () {
+          console.log("click");
+          $("this").toggleClass("active-btn");
+          $(".menu").toggleClass("active");
+          $(".top-nav").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

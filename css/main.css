@@ -38,17 +38,27 @@ main {
   margin-bottom: 100px;
 }
 .download-btn {
-  display: inline-flex;
-  margin: 10px 0;
+  display: flex;
+  margin: 10px;
   align-items: center;
   text-decoration: none;
   transition: 0.25s ease all;
   cursor: pointer;
+  padding: 20px 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #00000015;
+  background-color: #edecf0;
+  border-radius: 10px;
+  max-width: 46%;
+  width: 100%;
 }
 .download-btn__look {
   font-weight: bold;
-  padding-left: 20px;
-  text-decoration: underline;
+  margin-left: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed #4817b262;
+  color: #7b48e7;
+  margin-left: auto;
 }
 .download-btn__title {
   padding-left: 10px;
@@ -58,6 +68,15 @@ main {
 }
 .download-btn__image {
   width: 38px;
+}
+.flex {
+  display: flex;
+}
+.fww {
+  flex-wrap: wrap;
+}
+.jcc {
+  justify-content: center;
 }
 .top-nav {
   display: flex;
@@ -70,7 +89,6 @@ main {
 .menu {
   display: flex;
   padding-left: 0;
-  pointer-events: none;
 }
 
 .menu li {
@@ -118,7 +136,7 @@ main {
   display: none;
 }
 .logo {
-  transform: translateY(5px);
+  transform: translateY(4px);
   transition: 0.25s ease all;
 }
 .logo img {
@@ -165,13 +183,13 @@ main {
   line-height: 1.4;
 }
 .main__btn {
-  border: 2px solid #0056a6;
+  border: 1px solid #0056a6;
   padding: 27px 107px;
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
   text-decoration: none;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 600;
   color: #0056a6;
   display: inline-block;
   transition: 0.25s ease all;
@@ -485,12 +503,12 @@ main {
   .menu li {
     padding-right: 16px;
   }
-  .logo img.logo-bg {
+  /* .logo img.logo-bg {
     display: none;
   }
   .logo img.logo-sm {
     display: block;
-  }
+  } */
   .right-side__img {
     width: 535px;
   }
@@ -511,6 +529,12 @@ main {
   }
   .quoute__icon img {
     width: 50px;
+  }
+  .menu li {
+    font-size: 16px;
+  }
+  .logo img {
+    width: 300px;
   }
 }
 
@@ -584,6 +608,56 @@ main {
     padding: 19px 34px;
     border-radius: 16px;
   }
+
+  .right-side__img {
+    width: 480px;
+  }
+  .about__quoute {
+    width: 600px;
+  }
+  section {
+    padding: 20px 0;
+  }
+  .main {
+    margin-bottom: 40px;
+  }
+  .quoute__icon img {
+    width: 43px;
+  }
+  .back {
+    display: flex;
+    padding: 30px 0;
+    margin: 0;
+  }
+  .top-nav {
+    padding: 20px 26px;
+  }
+  .logo {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .download-btn {
+    margin: 20px 5px;
+  }
+  /*Айпад*/
+  .welcome img {
+    width: 248px;
+  }
+  .main__title {
+    font-size: 28px;
+  }
+  .welcome span {
+    padding-left: 0px;
+    font-size: 13px;
+  }
+  .globe {
+    margin-top: 28px;
+  }
+  .right-side__img {
+    width: 460px;
+  }
   .top-nav {
     /* flex-direction: column; */
     transition: 0.25s ease all;
@@ -594,6 +668,7 @@ main {
     height: 400px;
   }
   .menu {
+    pointer-events: none;
     flex-direction: column;
     text-align: center;
     padding-bottom: 30px;
@@ -608,6 +683,22 @@ main {
     left: 50%;
     transform: translateX(-50%);
     top: 90px;
+  }
+  .menu li a.active {
+    color: #eac573;
+    font-weight: 800;
+  }
+  .menu li a.active::after {
+    display: none;
+  }
+  .menu li a:hover::after {
+    display: none;
+  }
+  .menu li a:hover {
+    color: #fff;
+  }
+  .menu li a:active {
+    color: #eac573;
   }
   .logo {
     position: relative;
@@ -630,7 +721,7 @@ main {
     padding: 19px 0;
   }
   .top-nav {
-    padding: 0;
+    padding: 20px 17px;
   }
   .hamburger {
     display: block;
@@ -644,44 +735,19 @@ main {
   .menu.active {
     padding-top: 30px;
   }
-  .right-side__img {
-    width: 480px;
-  }
-  .about__quoute {
-    width: 600px;
-  }
-  section {
-    padding: 20px 0;
-  }
-  .main {
-    margin-bottom: 40px;
-  }
-  .quoute__icon img {
-    width: 43px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  /*Айпад*/
-  .welcome img {
-    width: 248px;
-  }
-  .main__title {
-    font-size: 28px;
-  }
-  .welcome span {
-    padding-left: 0px;
-    font-size: 13px;
-  }
-  .globe {
-    margin-top: 28px;
-  }
-  .right-side__img {
-    width: 460px;
-  }
 }
 
 @media screen and (max-width: 992px) {
+  .download-btn {
+    margin: 20px 0;
+  }
+  .method-wallet .flex {
+    flex-direction: column;
+  }
+  .download-btn {
+    width: 100%;
+    max-width: 100%;
+  }
   /*Маленькие ноутбуки*/
   .close {
     right: 20px;
@@ -741,10 +807,14 @@ main {
 }
 
 @media screen and (max-width: 796px) {
-  .back {
-    display: flex;
-    padding: 30px 0;
-    margin: 0;
+  .download-btn__look {
+    margin-left: auto;
+  }
+  .download-btn:hover {
+    opacity: 1;
+  }
+  .download-btn:active {
+    opacity: 0.5;
   }
   .achieve__item {
     width: 100%;
@@ -834,7 +904,12 @@ main {
     width: 310px;
   }
   .logo {
-    padding: 16px 17px;
+    /* padding: 16px 17px; */
+    transform: translateY(3px);
+    max-width: 270px;
+  }
+  .logo img {
+    width: 100%;
   }
   .hamburger {
     right: 20px;
@@ -899,6 +974,9 @@ main {
   .about__quoute br {
     display: block;
   }
+  .menu {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 460px) {
   .quoute__icon img {
@@ -918,15 +996,25 @@ main {
   }
 }
 @media screen and (max-width: 420px) {
+  .download-btn__look {
+    font-size: 14px;
+  }
+  .download-btn__title {
+    font-size: 13px;
+  }
   .about__quoute {
     padding: 20px;
   }
   .right-side__quoute p {
     font-size: 14px;
   }
+  .logo {
+    max-width: 248px;
+    transform: translateY(-6px);
+    padding-right: 0;
+  }
   .logo img {
-    max-width: 250px;
-    width: 80%;
+    width: 90%;
   }
   .main__title {
     font-size: 22px;
@@ -955,12 +1043,26 @@ main {
   .top-nav {
     height: 80px;
   }
-  .menu {
-    width: 100%;
+  .top-nav.active {
+    height: 359px;
   }
-}
-@media screen and (max-width: 420px) {
+  .menu {
+    top: 57px;
+  }
   .hamburger {
     top: 20px;
+  }
+  .download-btn {
+    padding: 13px;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .download-btn__title {
+    font-size: 12px;
+  }
+  .logo {
+    max-width: 200px;
+    transform: translateY(-1px);
   }
 }
